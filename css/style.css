@@ -1,0 +1,170 @@
+/* Main Page Design (HTML) */
+
+body {
+      text-align: center;
+	  background-color: grey;
+    }
+	
+h1 {
+  font-size: 65px;
+  font-family: consolas;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+
+.weapon{
+	color: white;
+}
+
+/* Desgign of restart button */
+
+.hiddenStyle{
+	display: none;
+	
+}
+
+a{
+	font-size: 30px;
+}
+
+
+.rounds {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:30px;
+  font-family: consolas;
+  text-align: center;
+  color: black;
+}
+
+/* Modal Design */
+
+.modal-title{
+	text-align: center;
+	font-size: 30px;
+}
+
+.modal-body{
+	text-align: left;
+}
+
+
+/* Scoreboard Design */
+
+.scores {
+	max-width: 900px;
+	max-height: 200px;
+	padding: 8px;
+	margin: 0px auto;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: space-evenly;
+	border-radius: 40px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: black;
+}
+
+
+/* Game Containter Design */
+
+    .container {
+        margin: 25px auto;
+        background-color: grey;
+        border-radius: 20px;
+        padding: 25px 50px;
+        width: 1540px;
+    }
+	
+	/* Result Container Design */	
+	
+	#container-result {
+		max-width: 700px;
+		max-height: 150px;
+		margin: 40px auto;
+        border-radius: 10px;
+        padding: 25px 50px;
+		border-width: 4px;
+		border-style: solid;
+		border-color: black;
+		display: flex;
+        flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+		text-align: center;
+		font-size: 26px;
+		font-family: Consolas;
+		color: black;	
+    }
+	
+	/* Result Container Background colours depending on action */
+	
+	.container-result-default {
+		background-color: #ffcc99;
+	}
+	
+	.container-result-win {
+		background-color: green;
+	}
+	
+	.container-result-lose {
+		background-color: red;
+	}
+	
+	/* Container for Rock Paper Scissors options */ 
+    #action {
+      max-width: 400px;
+	  max-height: 200px;
+      padding: 5px;
+      margin: 0px auto;
+      background-color: red;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 40px;
+	  border-width: 4px;
+	  border-style: solid;
+	  border-color: black;
+    }
+	
+	/* Design of 3 button options with image */
+	
+    .options {
+      width: 100%;
+      max-width: 120px;
+	  flex: auto;
+      border-radius: 30%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: yellow;
+      padding: 0px;
+      
+    }
+	
+	/* Display the player and computer selected choices */
+	
+    .display-moves {
+	  
+	  margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+	
+    .move {
+      border-radius: 30%;
+      border-width: 4px;
+      border-style: solid;
+      border-color: black;
+    }
+
+    .vs {
+      font-size: 80px;
+	  color: black;
+	  
+	}
