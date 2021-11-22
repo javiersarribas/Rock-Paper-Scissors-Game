@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors Game</title>
+  
+  <!-- CSS only -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css\style.css"/>
+  
+</head>
+<body>
+
+	<!-- Nav -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand">Rock, Paper, Scissors!</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav ms-auto">
+	
+	<!-- Modal button for instructions -->		  
+		<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Instructions
+		</button>
+	<!-- Modal Setup-->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Game Instructions:</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+				<p>The winner will be decided after 5 victories.</p>
+				<ul>
+				<li>Rock wins against scissors.</li>
+				<li>Scissors win against paper.</li>
+				<li>Paper wins against rock.</li>
+				</ul>
+					
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+				
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+	<!-- CONTENT -->
+	<div class="container">
+		<h1>Rock, Paper, Scissors!</h1>
+		<h2 class="rounds">5 rounds to win! Are you ready...?</h2>
+			<h2 class="scores">
+			  Player <span id="player-score">0</span> - <span id="comp-score">0</span> Computer
+			</h2>
+			<div class="display-moves">
+			  <div class="move">
+				<img id="p-move" class="options" src="img/Random.png">
+			  </div>
+			  <div class="vs">VS</div>
+			  <div class="move">
+				<img id="c-move" class="options" src="img/Random.png">
+			  </div>
+			</div>
+			
+	<!-- RESULT TAB -->		
+			<div class="container-result-default" id="container-result">
+				<div id="result">
+				</div>
+			</div>
+			
+			<div id="action">
+				<div id="options">
+				<h2 class="weapon">Pick your weapon!<h2>
+				  <input class="options" title="Choose rock!" type="image" src="img/Rock.png" value="Rock" />
+				  <input class="options" title="Choose paper!" type="image" src="img/Paper.png" value="Paper" />
+				  <input class="options" title="Choose scissors!" type="image" src="img/Scissors.png" value="Scissors" />
+				</div>
+				<a id="restart-action" onclick="restart()" class="hiddenStyle">Restart</a>
+			</div>
+			
+	</div>
+	
+
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white fixed-bottom">
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		2021 Javier Sánchez Arribas
+		</div>
+	</footer>
+	
+	<!-- JavaScript HTML design -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- JavaScript file for game -->
+	<script src="js\script.js"></script>
+
+</body>
+</html>
