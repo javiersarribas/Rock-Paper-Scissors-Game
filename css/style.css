@@ -28,6 +28,10 @@ a{
 	font-size: 30px;
 }
 
+a:hover{
+	cursor:pointer;
+}
+
 
 .rounds {
   margin-top: 20px;
